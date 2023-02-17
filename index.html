@@ -13,7 +13,7 @@
 <body>
     <!-- nevber start -->
     <div class="first-part">
-        <div class="menu-icon">
+        <div class="menu-icon" id="menu-icon" onclick="slide()">
             <span></span>
             <span></span>
             <span></span>
@@ -46,16 +46,21 @@
     <div class="wrapper">
         <nav>
             <div class="menu">
+                <div class="menu-dot">
+                    <img src="images/icons8-circled-menu-30.png" alt="">
+                </div>
                 <ul>
-                    <li><a href="#">BUY</a></li>
-                    <li><a href="#">RANT</a></li>
-                    <li><a href="#">BOOKINGS</a></li>
-                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">Caregories</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Gaming</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">PC builds</a></li>
                 </ul>
             </div>
         </nav>
     </div>
-    <div class="slideber">
+    <div class="slideber" id="slideber">
         <div class="unu">
             <div class="un">
                 <div class="unl">
@@ -65,7 +70,7 @@
                     <h1>Hello,Sign in</h1>
                 </div>
                 <div class="unc">
-                    <img src="images/icons8-multiply-30.png" alt="">
+                    <img src="images/icons8-multiply-30.png" alt="" id="crose" onclick="crose()">
                 </div>
             </div>
             <div class="unb">
@@ -95,7 +100,12 @@
                 </ul>
                 <hr>
                 <h1>Concact Us</h1>
-                <p></p>
+                <p> WhastsApp us : <span>7278663190</span></p>
+                <p> Call us : <span>7278663190</span>
+                    8:00 AM to 8:00 PM,365 days</p>
+                <p>Please note that you are accessing the BETA Version of <span>wwww.souptikbej.com</span></p>
+                <p>Should you encounter any bugs,glitches,lack of functionality,delayed deliveries,billing error or
+                    other problem on the beta website,please email us on <span>bejsouptik@gmail.com</span></p>
             </div>
         </div>
     </div>
@@ -109,5 +119,6 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>

@@ -10,7 +10,7 @@
 
 body {
     font-family: "Lato", sans-serif;
-    background-color: #c6e377;
+    background-color: #f2f7ff;
     height: 100vh;
 }
 .menu-icon span{
@@ -32,7 +32,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 5px 10px;
     /* border: 1px solid black; */
     justify-content: space-between;
 }
@@ -58,11 +58,11 @@ form input {
 }
 
 form .searchbar-btn {
-    background: #36622b;
+    background: #0b409c;
     padding: 10px 50px;
     border: none;
     outline: none;
-    color: black;
+    color: rgb(255, 254, 254);
     letter-spacing: 1px;
     cursor: pointer;
     font: 1em sans-serif;
@@ -111,9 +111,9 @@ form .fa-magnifying-glass {
 nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #fbfad3;
+    background-color: #0b409c;
     padding: 1rem 1.5rem;
     font-family: 'Prompt', sans-serif;
     font-weight: 600;
@@ -135,7 +135,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 700;
 }
 
@@ -227,6 +227,8 @@ nav a {
     background-color: #ffffff;
     position: absolute;
     top: 0px;
+    padding: 5px;
+    display: none;
 }
 .unlist-all h1{
     font-size: 17px;
@@ -243,7 +245,13 @@ nav a {
     text-decoration: none;
     color: #000000;
 }
-/* fbfad3 */
-/* c6e377 */
-/* 729d39 */
-/* 36622b */
+.unlist-all p{
+    margin: 20px 10px;
+}
+.unlist-all span{
+    color: rgb(7, 141, 252);
+}
+.unlist-all hr{
+    margin-top: 5px;
+}
+/* #ffe867 */
