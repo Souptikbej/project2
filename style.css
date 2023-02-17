@@ -79,6 +79,9 @@ form .fa-magnifying-glass {
     width: 100%;
     margin: 0 auto;
     box-shadow: 0 5px 5px -5px #333;
+    position: relative;
+    display: flex;
+    background-color: #0b409c;
 }
 
 .icon-part1 {
@@ -113,14 +116,9 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #0b409c;
-    padding: 1rem 1.5rem;
+    padding: 1rem 0px;
     font-family: 'Prompt', sans-serif;
     font-weight: 600;
-}
-
-.menu {
-    display: flex;
 }
 
 nav ul {
@@ -139,8 +137,18 @@ nav a {
     font-weight: 700;
 }
 
-
-
+.menu-dot{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magamenu1{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
 
 @media (max-width: 40.625em) {
     nav .menu {
