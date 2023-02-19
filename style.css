@@ -32,13 +32,16 @@ body {
     /* margin-right: 400px; */
     /* border: 1px solid rgb(0, 247, 255); */
 }
+
 .icon-part1 {
     display: flex;
     margin-left: 420px;
 }
-.menu-icon{
+
+.menu-icon {
     margin-right: 420px;
 }
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -48,6 +51,7 @@ body {
     background-color: #0b409c;
     justify-content: center;
 }
+
 .first-part {
     width: 100%;
     margin: 0 auto;
@@ -177,11 +181,13 @@ nav a {
     flex-basis: 23%;
     margin: 1%;
 }
-.magamenu1-item1 a:hover{
+
+.magamenu1-item1 a:hover {
     padding-left: 5px;
     color: #355da1;
 }
-.magamenu1-item1 a{
+
+.magamenu1-item1 a {
     margin: 0px;
     transition: .5s;
     cursor: pointer;
@@ -301,4 +307,165 @@ nav ul li:hover .magamenu1 {
     margin-top: 5px;
 }
 
+.layout {
+    width: 1349px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 0px auto;
+}
+
+.poster-main {
+    object-fit: cover;
+    padding: 5px;
+}
+
+.poster-main img {
+    width: 439px;
+}
+
+.slide-container {
+    position: relative;
+    width: 1349px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 0px auto;
+}
+
+.slide {
+    width: 100%;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    color: black;
+    background-color: aliceblue;
+    padding: 8px 19px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: transparent;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* .next {
+    right: 10px;
+} */
+
+.prev {
+    left: 0px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: transparent;
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 4
+    }
+}
+
+/* .sliding-bar{
+    position: relative;
+    width: 100%;
+}
+.slide1{
+    width: 100%;
+}
+.arrow{
+    position: absolute;
+    top: 45%;
+    padding: 8px 28px;
+    font-size: 50px;
+    color: #030303;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #0b409c;
+}
+.prv{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+.slide1{
+    display: none;
+} */
+/* ------------ */
 /* #ffe867 */
+/* .slider{
+    width: 100%;
+    display: flex;
+}
+img{
+    width: 100%;
+    padding: 0px 10px;
+}
+.slider-image{
+    display: flex;
+}
+.showimg{
+    margin: auto;
+}
+.arrow{
+    background-color: #ffffff62;
+    padding: 20px 10px;
+    border: 1px solid black;
+    outline: none;
+} */
+/* .right{
+    position: relative;
+}
+.left{
+    position: relative;
+} */
