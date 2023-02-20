@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Outfit:wght@400;700&family=Prompt:wght@600&display=swap');
 
+@font-face {
+    font-family: souptik;
+    src: url('./font/ARCADECLASSIC.TTF');
+}
+
 *,
 *::before,
 *::after {
@@ -10,7 +15,7 @@
 
 body {
     font-family: "Lato", sans-serif;
-    background-color: #f2f7ff;
+    background-color: #000000;
     height: 100vh;
 }
 
@@ -48,8 +53,10 @@ body {
     box-shadow: 0 5px 5px -5px #333;
     position: relative;
     display: flex;
-    background-color: #0b409c;
+    /* background-color: #0b409c; */
     justify-content: center;
+    background: rgb(6, 0, 101);
+    background: linear-gradient(90deg, rgba(6, 0, 101, 1) 0%, rgba(84, 9, 121, 1) 51%, rgba(0, 212, 255, 1) 100%);
 }
 
 .first-part {
@@ -60,6 +67,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    background-color: #ffffff;
 }
 
 .searchbar {
@@ -84,11 +92,12 @@ form input {
 }
 
 form .searchbar-btn {
-    background: #355da1;
+    background: rgba(0, 212, 255, 1) 100%;
     padding: 10px 50px;
     border: none;
+    /* border: 3px solid rgb(0, 0, 0); */
     outline: none;
-    color: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
     letter-spacing: 1px;
     cursor: pointer;
     font: 1em sans-serif;
@@ -131,7 +140,6 @@ nav {
     padding: 1rem 0px;
     font-family: 'Prompt', sans-serif;
     font-weight: 600;
-
 }
 
 nav ul {
@@ -148,7 +156,9 @@ nav li {
 nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: 700;
+    font-weight: 300;
+    font-family: souptik;
+    font-size: 20px;
 }
 
 .menu-dot {
@@ -173,8 +183,9 @@ nav a {
     height: 300px;
     left: 0px;
     transition: 1s;
-    background-color: #f2f7ff;
+    background-color: #6b70798f;
     display: flex;
+    z-index: 99;
 }
 
 .magamenu1-item1 {
@@ -195,6 +206,7 @@ nav a {
     padding-top: 10px;
     padding-bottom: 10px;
     color: rgba(128, 128, 128, 0.616);
+    font-family: none;
 }
 
 .magamenu1-item1 ul li {
@@ -274,6 +286,7 @@ nav ul li:hover .magamenu1 {
     top: 0px;
     padding: 5px;
     display: none;
+    z-index: 99;
 }
 
 .unlist-all h1 {
@@ -307,7 +320,36 @@ nav ul li:hover .magamenu1 {
     margin-top: 5px;
 }
 
+/* ---------- */
+.poster-main {
+    background-color: dodgerblue;
+    padding: 1rem;
+    object-fit: cover;
+}
+
 .layout {
+    max-width: 1349px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* .layout {
     width: 1349px;
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr);
@@ -315,33 +357,30 @@ nav ul li:hover .magamenu1 {
     padding: 10px 0px;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
     margin: 0px auto;
 }
 
 .poster-main {
     object-fit: cover;
     padding: 5px;
-}
-
+} */
+/* ------------ */
 .poster-main img {
-    width: 439px;
+    width: 405px;
 }
 
-.slide-container {
+/* .slide-container {
     position: relative;
     width: 1349px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
     margin: 0px auto;
 }
 
 .slide {
     width: 100%;
 }
-
 .arrow {
     cursor: pointer;
     position: absolute;
@@ -375,9 +414,6 @@ nav ul li:hover .magamenu1 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* .next {
-    right: 10px;
-} */
 
 .prev {
     left: 0px;
@@ -413,59 +449,89 @@ nav ul li:hover .magamenu1 {
     to {
         opacity: 4
     }
+} */
+.mySlides {
+    display: none
 }
 
-/* .sliding-bar{
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1349px;
     position: relative;
-    width: 100%;
-}
-.slide1{
-    width: 100%;
-}
-.arrow{
-    position: absolute;
-    top: 45%;
-    padding: 8px 28px;
-    font-size: 50px;
-    color: #030303;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: #0b409c;
-}
-.prv{
-    left: 10px;
-}
-.next{
-    right: 10px;
-}
-.slide1{
-    display: none;
-} */
-/* ------------ */
-/* #ffe867 */
-/* .slider{
-    width: 100%;
-    display: flex;
-}
-img{
-    width: 100%;
-    padding: 0px 10px;
-}
-.slider-image{
-    display: flex;
-}
-.showimg{
     margin: auto;
 }
-.arrow{
-    background-color: #ffffff62;
-    padding: 20px 10px;
-    border: 1px solid black;
-    outline: none;
-} */
-/* .right{
-    position: relative;
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
-.left{
-    position: relative;
-} */
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
