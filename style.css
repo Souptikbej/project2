@@ -535,3 +535,11 @@ img {
         opacity: 1
     }
 }
+@media (max-width:820px){
+    #nav ul{
+        display: none;
+    }
+    form input{
+        width: 100%;
+    }
+}
