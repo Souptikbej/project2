@@ -451,7 +451,8 @@ nav ul li:hover .magamenu1 {
     }
 } */
 .mySlides {
-    display: none
+    display: none;
+    padding: 2px;
 }
 
 img {
@@ -542,4 +543,19 @@ img {
     form input{
         width: 100%;
     }
+}
+.intel-section{
+    width: 1349px;
+    border: 1px solid red;
+    height: 400px;
+}
+.ad{
+    /* width: 400px; */
+    /* height: 400px; */
+    padding: 5px;
+    object-fit: cover;
+    border: 1px solid green;
+}
+.ad img{
+    width: 520px;
 }
