@@ -505,6 +505,7 @@ img {
     width: 100%;
     text-align: center;
 }
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -536,16 +537,19 @@ img {
         opacity: 1
     }
 }
-@media (max-width:820px){
-    #nav ul{
+
+@media (max-width:820px) {
+    #nav ul {
         display: none;
     }
-    form input{
+
+    form input {
         width: 100%;
     }
 }
-.intel-section{
-    position: relative;
+
+.intel-section {
+    /* position: relative; */
     /* width: 1349px; */
     border: 1px solid red;
     width: 100%;
@@ -553,4 +557,66 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* .iposter {
+    width: 30%;
+    border: 1px solid yellow;
+    display: flex;
+    height: 400px;
+} */
+.slider {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider .slide {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: 0.5s left ease-in-out;
+}
+
+.slider .item {
+    margin-right: 10px;
+}
+
+.slider .item:last-child {
+    margin-right: 0;
+}
+
+.ctrl {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ctrl-btn {
+    padding: 10px 10px;
+    min-width: 50px;
+    background: #fff;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+
+    position: absolute;
+    top: 50%;
+    margin-top: -27.5px;
+}
+
+.ctrl-btn.pro-prev {
+    left: 0;
+}
+
+.ctrl-btn.pro-next {
+    right: 0;
 }
