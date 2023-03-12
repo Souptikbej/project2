@@ -1,8 +1,10 @@
+
 "use strict";
 
 productScroll();
 
 function productScroll() {
+    
     let slider = document.getElementById("slider");
     let next = document.getElementsByClassName("pro-next");
     let prev = document.getElementsByClassName("pro-prev");
@@ -10,11 +12,13 @@ function productScroll() {
     let item = document.getElementById("slide");
 
     for (let i = 0; i < next.length; i++) {
+        
         //refer elements by class name
 
         let position = 0; //slider postion
 
         prev[i].addEventListener("click", function () {
+
             //click previos button
             if (position > 0) {
                 //avoid slide left beyond the first item
@@ -24,6 +28,7 @@ function productScroll() {
         });
 
         next[i].addEventListener("click", function () {
+            
             if (position >= 0 && position < hiddenItems()) {
                 //avoid slide right beyond the last item
                 position += 1;
@@ -33,6 +38,7 @@ function productScroll() {
     }
 
     function hiddenItems() {
+        
         //get hidden items
         let items = getCount(item, false);
         let visibleItems = slider.offsetWidth / 210;
@@ -41,11 +47,13 @@ function productScroll() {
 }
 
 function translateX(position) {
+    
     //translate items
     slide.style.left = position * -210 + "px";
 }
 
 function getCount(parent, getChildrensChildren) {
+    alert("hello !");
     //count no of items
     let relevantChildren = 0;
     let children = parent.childNodes.length;
