@@ -639,7 +639,7 @@ img {
 .productB {
     width: 75%;
     padding: 5px;
-    background-color: #36363f;
+    background-color: #00002b;
 }
 
 .productB-header {
@@ -712,97 +712,158 @@ img {
     display: none;
 }
 
-#intel-i3 {
-    display: block;
+.holesys {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
 }
 
-.intel-i3-1 {
-    width: 20%;
-    height: 350px;
-    border: 1px solid black;
-    background-color: #f2f2f2;
+.holesys::-webkit-scrollbar {
+    display: none;
 }
 
-.intel-i3-1-img {
-    width: 100%;
+.holesys .product {
+    min-width: 24%;
+    height: 75%;
+    background: whitesmoke;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+@media (max-width: 768px) {
+    .holesys .product {
+        min-width: 49%;
+        margin: 0 10px 0 0;
+    }
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    /* padding: 50px; */
+    background: #f0f0f0;
+    object-fit: cover;
     overflow: hidden;
 }
 
-.intel-i3-1-img img {
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-details {
     padding: 10px;
-    object-fit: cover;
-    width: 100%;
 }
 
-.stock {
-    border-radius: 25px;
-    border: 2px solid green;
-    color: green;
-    padding: 5px 10px;
-    margin-left: 10px;
-    font-size: 10px;
-}
-
-.product-name {
-    color: #000000;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 10px 10px;
-}
-
-.cart {
-    width: 90%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    background-color: yellow;
-    color: #000000;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.intel-i3-1 del {
-    color: rgb(255, 0, 0);
-    text-decoration: none;
-    position: relative;
-    font-size: 15px;
-    font-weight: 500;
-    margin-left: 10px;
-}
-
-.intel-i3-1 del:before {
-    content: " ";
+.product-catagory {
     display: block;
-    width: 100%;
-    border-top: 2px solid rgb(59, 59, 59);
-    height: 1px;
-    position: absolute;
-    bottom: 7px;
-    left: 0;
-    transform: rotate(-11deg);
-}
-
-.intel-i3-1 del:after {
-    content: " ";
-    display: block;
-    width: 100%;
-    border-top: 2px solid rgb(49, 49, 49);
-    height: 1px;
-    position: absolute;
-    bottom: 7px;
-    left: 0;
-    transform: rotate(11deg);
-}
-.productB-slider-discount{
-    color: green;
-    font-size: 17px;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-.intel-i3-1 ins {
-    color: green;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
-    text-decoration: none;
-    margin-left: 10px;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
 }
+
+.product h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product h4 a:hover {
+    color: #fbb72c;
+}
+
+.product p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links button {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: 500;
+    color: #000000;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: #fbb72c;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.productB-pro{
+    position: relative;
+}
+.productB-pro .arr {
+	font-size: 40px;
+	cursor: pointer;
+	color: #ffffff;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	line-height: 19px;
+	text-align: center;
+	border-radius: 3px;
+}
+
