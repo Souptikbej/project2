@@ -323,7 +323,7 @@ nav ul li:hover .magamenu1 {
 /* ---------- */
 .poster-main {
     background-color: dodgerblue;
-    padding: 1rem;
+    padding: 5px;
     object-fit: cover;
 }
 
@@ -793,7 +793,6 @@ img {
 .poster-2nd {
     display: flex;
     max-width: 1349px;
-    /* height: 100px; */
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -802,9 +801,14 @@ img {
 }
 
 .poster-2nd-img {
-    float: left;
     padding: 5px;
 }
+@media screen and (max-width: 500px) {
+    .poster-2nd {
+      /* width: 100%; */
+      flex-direction: column;
+    }
+  }
 /* .pi1{
     width: ;
 } */
