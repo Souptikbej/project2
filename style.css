@@ -522,7 +522,7 @@ img {
 /* ------- */
 .productH {
     display: flex;
-    max-width:1349px;
+    max-width: 1349px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -771,30 +771,40 @@ img {
     background-color: #00000000;
     z-index: 50;
 }
-.productB-pro .arr:hover{
+
+.productB-pro .arr:hover {
     background-color: #00000088;
     color: #ccc;
 }
+
 .left {
     left: 50;
     z-index: 50;
     margin-top: 200px;
 }
+
 .right {
     right: 0;
     z-index: 50;
     margin-top: 200px;
     margin-right: 10px;
 }
-.poster-2nd{
+
+.poster-2nd {
     display: flex;
-    max-width:1349px;
+    max-width: 1349px;
+    /* height: 100px; */
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     border: 1px solid aqua;
     padding: 10px;
 }
-.poster-2nd img{
-    width: 100%;
+
+.poster-2nd-img {
+    float: left;
+    padding: 5px;
 }
+/* .pi1{
+    width: ;
+} */
