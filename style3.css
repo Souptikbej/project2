@@ -1,0 +1,36 @@
+.catagory-menu{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 123, 0);
+}
+.catagory-menu a{
+    padding: 15px;
+    background-color: rgb(255, 123, 0);
+    position: relative;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-bottom: 1px solid whitesmoke;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+}
+.catagory-menu a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.catagory-menu img{
+    width: 20px;
+    padding-right: 10px;
+}
+.na{
+    font-size: 15px;
+    width: 15px;
+}
+.arr-style{
+    font-size: 20px; 
+    margin: 0px;
+    position: absolute;
+    right: 7px;
+}
