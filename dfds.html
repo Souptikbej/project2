@@ -7,10 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style1.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> -->
 </head>
 
 <body>
+    <section class="header">
+        <div class="sitelogo">
+            <img src="images/aorus-logo.png" alt="">
+        </div>
+        <div class="phone-wislist-compare-cart">
+            <div class="phone">
+                <div class="phone-image">
+                    <i class='fa fa-phone' style="font-size: 25px;"></i>
+                </div>
+                <div class="number">
+                    <p><span>Live Chat</span> or:</p>
+                    <a href="">9874561230</a>
+                </div>
+            </div>
+            <div class="wishlist-comare-cart">
+                <div class="wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="wishlist-details"><a href="">Wishlist</a></div>
+                </div>
+                <div class="compare">
+                    <i class="fa-solid fa-code-compare"></i>
+                    <div class="Compare-details"><a href="">Compare</a></div>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="Cart-details"><a href="">Cart</a></div>
+                </div>
+                <!-- <hr> -->
+                <div class="profile" onclick="toggleMenu()">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="Profile-details"><a href="#c">Profile</a></div>
+                </div>
+                <div class="sub-menu-wrao" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="images/icons8-user-30.png" alt="">
+                            <h2>Souptik Bej</h2>
+                        </div>
+                        <hr>
+                        <a href="" class="sub-menu-link">
+                            <img src="images/profile.png" alt="">
+                            <p>Edit Profile</p>
+                            <i class="sml fa right-arrow fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="sub-menu-link">
+                            <img src="images/setting.png" alt="">
+                            <p>Settings & Privacy</p>
+                            <i class="sml fa right-arrow fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="sub-menu-link">
+                            <img src="images/help.png" alt="">
+                            <p>Help & Support</p>
+                            <i class="sml fa right-arrow fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="sub-menu-link">
+                            <img src="images/logout.png" alt="">
+                            <p>Logout</p>
+                            <i class="sml fa right-arrow fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <nav id="navbar">
         <div class="browser-catagorey">
             <div class="cat-icon">
@@ -29,48 +94,58 @@
             </div>
             <div class="browser-catagorey-details">
                 <a href="">Browse Categories</a><i class="fa down fa-angle-down" aria-hidden="true"></i>
-                <!-- <i class="fa fa-gift" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-left" aria-hidden="true"></i> -->
-                <!--  -->
-                <!--  -->
             </div>
             <div class="categorey-box">
-                <a href="">&nbsp;Fasion</a>
-                <a href=""><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Home & Garden</a>
-                <a href=""><i class="fa fa-television" aria-hidden="true"></i> &nbsp;Electronics</a>
-                <a href="">&nbsp;Furniture</a>
-                <a href=""><i class="fa fa-heartbeat" aria-hidden="true"></i> &nbsp;Healthy & Beauty</a>
-                <a href="">&nbsp;Gift Ideas</a>
-                <a href="">&nbsp;Toy & Games</a>
-                <a href="">&nbsp;Cooking</a>
-                <a href=""><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp;Smart Phones</a>
-                <a href=""><i class="fa fa-camera" aria-hidden="true"></i> &nbsp;Cemera & Photo</a>
-                <a href=""><i class="fa fa-diamond" aria-hidden="true"></i> &nbsp;Acccessories</a>
-                <a href="" id="All-categorey" style="color: #336699;">View all categorey <i
-                        class="fa right-arrow fa-angle-right" aria-hidden="true" style="font-size: 25px;"></i></a>
-                &nbsp;
+                <a href=""><img src="images/cpu-150x150.png" alt="">&nbsp;Processor<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/motherboard-3-150x150.png" alt="">&nbsp;Mother board<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/cabinet-150x150.png" alt="">&nbsp;PC Cabinet<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/graphics-card-150x150.png" alt="">&nbsp;Graphics card<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/fan-150x150.png" alt="">&nbsp;CPU Cooler<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/ssd-drive-150x150.png" alt="">&nbsp;SSD<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/ram-3-150x150.png" alt="">&nbsp;RAM<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/power-supply-1-150x150.png" alt="">&nbsp;Power Supply<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/mouse-3-150x150.png" alt="">&nbsp;Mouse<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/keyboard-3-150x150.png" alt="">&nbsp;Keyboard<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/motherboard-3-150x150.png" alt="">&nbsp;Headset<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="navlinks">
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">Shop <i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a></li>
-                <li><a href="">Vendor <i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a></li>
-                <li><a href="">Blog <i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a></li>
-                <li><a href="">Pages <i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a></li>
-                <li><a href="">Elements <i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a></li>
+                <li><a href="">Brands<i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a></li>
+                <li><a href="">Gaming<i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a>
+                    
+                </li>
+                <li><a href="">Components<i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a></li>
+                <li><a href="">PC builds</i></a></li>
+                <li><a href="">Pre builds</i></a></li>
             </ul>
         </div>
-        <div class="track-and-deals">
-            <div class="track">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <a href="">Track Order</a>
-            </div>
-            <div class="deals">
-                <i class="fa fa-tags" aria-hidden="true"></i>
-                <a href="">Daily Deals</a>
-            </div>
+        <div class="searchbar">
+            <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search..">
+                <button type="submit" class="searchbar-btn">Search</button>
+            </form>
         </div>
     </nav>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu")
+        }
+    </script>
 </body>
 
 </html>

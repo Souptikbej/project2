@@ -1,0 +1,40 @@
+.magamenu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid red;
+}
+.magamenu1-item1{
+    padding: 0px 20px;
+}
+.magamenu1-item1 h3{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 10px 0px;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    color: #000000;
+}
+.magamenu1-item1 ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #686868;
+    transition: transform 0.5s;
+}
+.magamenu1-item1 ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 10px 0px;
+}
+.magamenu1-item1 ul{
+    padding: 0px;
+}
+.magamenu1-item1 ul li a:hover{
+    transform: scale(0.9);
+    color: black;
+}
