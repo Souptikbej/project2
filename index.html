@@ -16,146 +16,198 @@
 
 <body>
     <!-- nevber start -->
-    <div class="first-part">
-        <div class="menu-icon" id="menuicon" onclick="slide()">
-            <span></span>
-            <span></span>
-            <span></span>
+    <section class="header">
+        <div class="sitelogo">
+            <img src="images/aorus-logo.png" alt="">
         </div>
-        <div class="logo">
-            <a href="index.html"><img src="images/Background.png" alt="logo"></a>
-        </div>
-        <div class="icon-part1">
-            <div class="login">
-                <i class="fa fa-solid fa-user" aria-hidden="true"></i>
-                <a href="">LOGIN</a>
+        <div class="phone-wislist-compare-cart">
+            <div class="phone">
+                <div class="phone-image">
+                    <i class='fa fa-phone' style="font-size: 25px;"></i>
+                </div>
+                <div class="number">
+                    <p><span>Live Chat</span> or:</p>
+                    <a href="">9874561230</a>
+                </div>
             </div>
-            <div class="track">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <a href="">Track Order</a>
-            </div>
-            <div class="deals">
-                <i class="fa fa-duotone fa-cart-shopping" aria-hidden="true"></i>
-                <a href="">CART</a>
+            <div class="wishlist-comare-cart">
+                <div class="wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="wishlist-details"><a href="">Wishlist</a></div>
+                </div>
+                <div class="compare">
+                    <i class="fa-solid fa-code-compare"></i>
+                    <div class="Compare-details"><a href="">Compare</a></div>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="Cart-details"><a href="">Cart</a></div>
+                </div>
+                <!-- <hr> -->
+                <div class="profile" onclick="toggleMenu()">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="Profile-details"><a href="#c">Profile</a></div>
+                </div>
+                <div class="sub-menu-wrao" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="images/icons8-user-30.png" alt="">
+                            <h2>Souptik Bej</h2>
+                        </div>
+                        <hr>
+                        <a href="" class="sub-menu-link">
+                            <i class="koko fa-solid fa-user"></i>
+                            <!-- <img src="images/profile.png" alt=""> -->
+                            <p>Edit Profile</p>
+                            <i class="sml fa right-arrow fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="sub-menu-link">
+                            <i class="koko fa-solid fa-gear"></i>
+                            <!-- <img src="images/setting.png" alt=""> -->
+                            <p>Settings & Privacy</p>
+                            <i class="sml fa right-arrow fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="sub-menu-link">
+                            <i class="koko fa-solid fa-circle-info"></i>
+                            <!-- <img src="images/help.png" alt=""> -->
+                            <p>Help & Support</p>
+                            <i class="sml fa right-arrow fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="" class="sub-menu-link">
+                            <i class="koko fa-solid fa-right-from-bracket"></i>
+                            <!-- <img src="images/logout.png" alt=""> -->
+                            <p>Logout</p>
+                            <i class="sml fa right-arrow fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="wrapper">
-        <div class="menu-dot">
-            <img src="images/icons8-circled-menu-30.png" alt="">
+    </section>
+    <nav id="navbar">
+        <div class="browser-catagorey">
+            <div class="cat-icon">
+                <div class="dot-and-line">
+                    <div id="circule"></div>
+                    <div id="line"></div>
+                </div>
+                <div class="dot-and-line">
+                    <div id="circule"></div>
+                    <div id="line"></div>
+                </div>
+                <div class="dot-and-line">
+                    <div id="circule"></div>
+                    <div id="line"></div>
+                </div>
+            </div>
+            <div class="browser-catagorey-details">
+                <a href="">Browse Categories</a><i class="lp fa down fa-angle-down" aria-hidden="true"></i>
+            </div>
+            <div class="categorey-box">
+                <a href=""><img src="images/cpu-150x150.png" alt="">&nbsp;Processor<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/motherboard-3-150x150.png" alt="">&nbsp;Mother board<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/cabinet-150x150.png" alt="">&nbsp;PC Cabinet<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/graphics-card-150x150.png" alt="">&nbsp;Graphics card<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/fan-150x150.png" alt="">&nbsp;CPU Cooler<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/ssd-drive-150x150.png" alt="">&nbsp;SSD<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/ram-3-150x150.png" alt="">&nbsp;RAM<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/power-supply-1-150x150.png" alt="">&nbsp;Power Supply<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/mouse-3-150x150.png" alt="">&nbsp;Mouse<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/keyboard-3-150x150.png" alt="">&nbsp;Keyboard<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+                <a href=""><img src="images/motherboard-3-150x150.png" alt="">&nbsp;Headset<i
+                        class="rarr fa right-arrow fa-angle-right" aria-hidden="true"></i></a>
+            </div>
         </div>
-        <nav id="nav">
+        <div class="navlinks">
             <ul>
-                <li><a href="#">Categories</a>
-                    <div class="catagory-menu">
-                        <a href="">
-                            <img src="images/cpu-150x150.png" alt="">
-                            Processor
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                        <a href=""><img src="images/motherboard-3-150x150.png" alt="">
-                            Mother board
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                        <a href=""><img src="images/cabinet-150x150.png" alt="">
-                            PC Cabinet
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                        <a href=""><img src="images/graphics-card-150x150.png" alt="">
-                            Graphics card
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                        <a href=""><img src="images/fan-150x150.png" alt="">
-                            CPU Cooler
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                        <a href=""><img src="images/ssd-drive-150x150.png" alt="">
-                            SSD
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                        <a href=""><img src="images/ram-3-150x150.png" alt="">
-                            RAM
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                        <a href=""><img src="images/power-supply-1-150x150.png" alt="">
-                            Power Supply
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                        <a href=""><img src="images/mouse-3-150x150.png" alt="">
-                            Mouse
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                        <a href=""><img src="images/keyboard-3-150x150.png" alt="">
-                            Keyboard
-                            <i class="arr-style fa right-arrow fa-angle-right" aria-hidden="true"
-                                style="font-size: 25px;"></i>
-                        </a>
-                    </div>
-                </li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Brands</a></li>
-                <li><a href="#">Gaming</a>
-                    <div class="magamenu1">
-                        <div class="magamenu1-item1">
-                            <h3>GAMING MOUSE</h3>
-                            <ul>
-                                <li><a href="">Wireless Mouse</a></li>
-                                <li><a href="">Wire Mouse</a></li>
-                                <li><a href="">Bluetooth Mouse</a></li>
-                                <li><a href="">Wireless + Bluetooth Mouse</a></li>
-                            </ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Brands<i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a></li>
+                <li><a href="">Gaming<i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="mega-menu fadeIn animated">
+                        <div class="mm-6column">
+                            <span class="left-images">
+                                <img src="images/gaming-keyboards.jpg">
+                                <p>Most Popular Styles </p>
+                            </span>
                         </div>
-                        <div class="magamenu1-item1">
-                            <h3>GAMING KEYBOARD</h3>
-                            <ul>
-                                <li><a href="">Wireless Keyboard</a></li>
-                                <li><a href="">Wire Keyboard</a></li>
-                                <li><a href="">Bluetooth Keyboard</a></li>
-                                <li><a href="">Wireless + Bluetooth Keyboard</a></li>
-                            </ul>
+                        <div class="mm-3column">
+                            <span class="categories-list">
+                                <ul>
+                                    <span class="clspan">Gaming Mouse</span>
+                                    <hr>
+                                    <li class="li">Wireless Mouse</li>
+                                    <li class="li">Wire Mouse</li>
+                                    <li class="li">Bluetooth Mouse</li>
+                                    <li class="li">Wireless + Bluetooth Mouse</li>
+                                    <li class="li"><a class="mm-view-more" href="#">View more →</a></li>
+                                </ul>
+                            </span>
                         </div>
-                        <div class="magamenu1-item1">
-                            <h3>GAMING HEADPHONES</h3>
-                            <ul>
-                                <li><a href="">Wireless Headset</a></li>
-                                <li><a href="">Wire Headset</a></li>
-                                <li><a href="">Bluetooth Headset</a></li>
-                                <li><a href="">Wireless + Bluetooth Headset</a></li>
-                            </ul>
+                        <div class="mm-3column">
+                            <span class="categories-list">
+                                <ul>
+                                    <span class="clspan">Gaming Keyboard</span>
+                                    <hr>
+                                    <li class="li">Wireless Keyboard</li>
+                                    <li class="li">Wire Keyboard</li>
+                                    <li class="li">Bluetooth Keyboard</li>
+                                    <li class="li">Wireless + Bluetooth Keyboard</li>
+                                    <li class="li"><a class="mm-view-more" href="#">View more →</a></li>
+                                </ul>
+                            </span>
                         </div>
-                        <div class="magamenu1-item1">
-                            <h3>GAMING MOUSEPADS</h3>
-                            <ul>
-                                <li><a href="">Small Mousepad</a></li>
-                                <li><a href="">Medium Mousepad</a></li>
-                                <li><a href="">Large Mousepad</a></li>
-                                <li><a href="">XL Mousepad</a></li>
-                            </ul>
+                        <div class="mm-3column">
+                            <span class="categories-list">
+                                <ul>
+                                    <span class="clspan">Gaming Headsets</span>
+                                    <hr>
+                                    <li class="li">Wireless Headset</li>
+                                    <li class="li">Wire Headset</li>
+                                    <li class="li">Bluetooth Headset</li>
+                                    <li class="li">Wireless + Bluetooth Headset</li>
+                                    <li class="li"><a class="mm-view-more" href="#">View more →</a></li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="mm-3column">
+                            <span class="categories-list">
+                                <ul>
+                                    <span class="clspan">Gaming Mousepads</span>
+                                    <hr>
+                                    <li class="li">Small Mousepad</li>
+                                    <li class="li">Medium Mousepad</li>
+                                    <li class="li">Large Mousepad</li>
+                                    <li class="li">XL Mousepad</li>
+                                    <li class="li"><a class="mm-view-more" href="#">View more →</a></li>
+                                </ul>
+                            </span>
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Components</a></li>
-                <li><a href="#">PC builds</a></li>
+                <li><a href="">Components<i class="fa down-fa fa-angle-down" aria-hidden="true"></i></a></li>
+                <li><a href="">PC builds</i></a></li>
+                <li><a href="">Pre builds</i></a></li>
             </ul>
-            <div class="searchbar">
-                <form>
-                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search..">
-                    <button type="submit" class="searchbar-btn">Search</button>
-                </form>
-            </div>
-        </nav>
-    </div>
+        </div>
+        <div class="searchbar">
+            <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search..">
+                <button type="submit" class="searchbar-btn">Search</button>
+            </form>
+        </div>
+    </nav>
+
     <div class="slideber" id="slideber">
         <div class="unu">
             <div class="un">
@@ -396,7 +448,12 @@
             <img src="images/800x300.webp" alt="" style="width:100%">
         </div>
     </section>
-    
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu")
+        }
+    </script>
 </body>
 <script src="script.js"></script>
 <script type="text/javascript" src="productslide.js"></script>

@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 5px 20px; */
+    background-color:#FFE5CA;
+    padding: 8px 0px;
     /* border: 1px solid red; */
     /* padding: 25px; */
 }
@@ -12,7 +13,7 @@
     justify-content: center;
     align-items: center;
     padding: 0px 20px;
-    background-color: #a3a3a3;
+    background-color: rgb(225, 225, 225);
 }
 
 #circule {
@@ -89,24 +90,36 @@ form .fa-magnifying-glass {
     padding-left: 5px;
 }
 
-#navbar a {
+/* #navbar a {
     text-decoration: none;
     color: #353535;
 }
 
 #navbar li {
     list-style: none;
-}
+} */
 
 .browser-catagorey-details {
     padding-left: 8px;
     font-weight: 600;
     padding-top: 2px;
 }
-
-/* .navlinks{
-    margin: 0px 20px;
-} */
+.browser-catagorey-details a{
+    text-decoration: none;
+    color: #353535;
+}
+.navlinks {
+    /* border: 1px solid black; */
+}
+.navlinks ul li{
+    padding: 20px 15px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+.navlinks ul li:hover{
+    background-color: #E74646;
+}
 .navlinks ul {
     display: flex;
     padding: 0px;
@@ -114,16 +127,18 @@ form .fa-magnifying-glass {
 }
 
 .navlinks ul li a {
-    margin: 0px 15px;
+    text-decoration: none;
+    /* margin: 0px 15px; */
     font-weight: 600;
-    color: #353535;
+    color: #000000;
 }
 
 .browser-catagorey {
     display: flex;
-    background-color: rgb(225, 225, 225);
+    background-color:#FFE5CA;
     padding: 18px 18px 18px 18px;
-    border: 1px solid rgb(225, 225, 225);
+    border-right: 1px solid black;
+    /* border: 1px solid #FFE5CA; */
     cursor: pointer;
     position: relative;
 }
@@ -170,6 +185,7 @@ form .fa-magnifying-glass {
     display: flex;
     position: relative;
     transition: transform 0.5s;
+    text-decoration: none;
 }
 
 .categorey-box a:hover .rarr {
@@ -363,15 +379,29 @@ form .fa-magnifying-glass {
 
 /* -------------- */
 .mega-menu {
-    background: none repeat scroll 0 0 #888;
-    left: 0;
-    margin-top: 3px;
-    position: absolute;
-    width: 100%;
-    width: 1300px;
+    border-top: 3px solid #E74646;
     padding: 15px;
-    display: none;
+    background: none repeat scroll 0 0 #FA9884;
+    margin-top: 20px;
+    position: absolute;
+    width: 1300px;
+    max-height:0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
     transition-duration: 0.9s;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 99;
+    right: 0px;
+    left: -475px;
+}
+
+.navlinks ul li:hover .mega-menu {
+    max-height: 285px;
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-in;
 }
 
 .mm-6column:after,
@@ -458,7 +488,7 @@ form .fa-magnifying-glass {
 
 /*Animation--*/
 
-.animated {
+/* .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -488,4 +518,4 @@ form .fa-magnifying-glass {
 .fadeIn {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-}
+} */
