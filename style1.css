@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     background-color:#FFE5CA;
-    padding: 8px 0px;
+    padding: 0px;
     /* border: 1px solid red; */
     /* padding: 25px; */
 }
@@ -48,7 +48,7 @@
 form {
     background: whitesmoke;
     width: 370px;
-    height: 50px;
+    height: 40px;
     display: flex;
     border-radius: 30px;
     border: 1px solid black;
