@@ -15,7 +15,7 @@
 
 body {
     font-family: "Lato", sans-serif;
-    background-color: #000000;
+    background-color: #ffffff;
     height: 100vh;
 }
 
@@ -830,8 +830,9 @@ img {
 .productB {
     width: 75%;
     padding: 5px;
+    background-color:#6dc5ff;
     /* background-color: #00002b; */
-    background: linear-gradient(90deg, rgba(6, 0, 101, 1) 0%, rgba(84, 9, 121, 1) 51%, rgba(0, 212, 255, 1) 100%);
+    /* background: linear-gradient(90deg, rgba(6, 0, 101, 1) 0%, rgba(84, 9, 121, 1) 51%, rgba(0, 212, 255, 1) 100%); */
 }
 
 .productB-header {
@@ -1085,7 +1086,7 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
     padding: 10px;
 }
 
