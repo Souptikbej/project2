@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#FFE5CA;
+    background-color: #FFE5CA;
     padding: 0px;
     /* border: 1px solid red; */
     /* padding: 25px; */
@@ -104,22 +104,23 @@ form .fa-magnifying-glass {
     font-weight: 600;
     padding-top: 2px;
 }
-.browser-catagorey-details a{
+
+.browser-catagorey-details a {
     text-decoration: none;
     color: #353535;
 }
-.navlinks {
-    /* border: 1px solid black; */
-}
-.navlinks ul li{
+
+.navlinks ul li {
     padding: 20px 15px;
     list-style: none;
     position: relative;
     cursor: pointer;
 }
-.navlinks ul li:hover{
+
+.navlinks ul li:hover {
     background-color: #E74646;
 }
+
 .navlinks ul {
     display: flex;
     padding: 0px;
@@ -135,7 +136,7 @@ form .fa-magnifying-glass {
 
 .browser-catagorey {
     display: flex;
-    background-color:#FFE5CA;
+    background-color: #FFE5CA;
     padding: 18px 18px 18px 18px;
     border-right: 1px solid black;
     /* border: 1px solid #FFE5CA; */
@@ -385,7 +386,7 @@ form .fa-magnifying-glass {
     margin-top: 20px;
     position: absolute;
     width: 1300px;
-    max-height:0px;
+    max-height: 0px;
     overflow: hidden;
     transition: max-height 0.5s;
     transition-duration: 0.9s;
@@ -440,23 +441,27 @@ form .fa-magnifying-glass {
     padding: 5px 0;
     /* border: 1px solid  rgb(255, 0, 0); */
 }
-.categories-list ul{
+
+.categories-list ul {
     display: flex;
     flex-direction: column;
     padding: 0px;
     margin: 0px;
 }
+
 .categories-list a {
     list-style: none;
     text-decoration: none;
 }
-.categories-list hr{
+
+.categories-list hr {
     width: 100%;
     height: 1px;
     margin: auto;
     border: 0;
     background: #000000;
 }
+
 .left-images>p {
     background: none repeat scroll 0 0 #ff7f50;
     display: block;
@@ -465,16 +470,18 @@ form .fa-magnifying-glass {
     margin: 0;
     padding: 5px 14px;
 }
-.left-images img{
+
+.left-images img {
     width: 250px;
 }
+
 .categories-list .clspan {
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 5px;
 }
 
-.categories-list ul .li .mm-view-more{
+.categories-list ul .li .mm-view-more {
     transition: transform 0.5s;
     background: none repeat scroll 0 0 #ff7f50;
     color: #fff;
@@ -486,36 +493,92 @@ form .fa-magnifying-glass {
     text-decoration: none;
 }
 
-/*Animation--*/
 
-/* .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+.mySlides {
+    display: none;
+    /* padding: 2px; */
 }
 
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+img {
+    vertical-align: middle;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1349px;
+    position: relative;
+    margin: auto;
+    /* border: 1px solid red; */
 }
 
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-} */
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
