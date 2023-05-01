@@ -1,31 +1,38 @@
 .Top-categories-of-the-month {
     background-color: #f5f5f500;
     padding: 30px 60px;
+    /* border: 1px solid #ff0000; */
 }
 
 .Top-categories-of-the-month-heading {
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
     border-bottom: 1px solid #5f5f5f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .Top-categories-of-the-month-image-main-box {
+    max-width: 1250px;
+    /* border: 1px solid #5f5f5f; */
     display: flex;
 }
 
 .Top-categories-of-the-month-image-box {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgb(255, 255, 255);
-    margin: 15px 10px;
+    margin: 15px 17px;
     position: relative;
     cursor: pointer;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
-/* .Top-categories-of-the-month-image-box :hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-} */
+
+.Top-categories-of-the-month-image-box:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
 
 .Top-categories-of-the-month-image-box p {
     text-align: center;
@@ -35,22 +42,6 @@
 
 .Top-categories-of-the-month-image-box:hover #Show-Now_popup {
     display: block;
-}
-
-.Top-categories-of-the-month-image-box:hover #Show-Now_popup .Show-Now_popup-line {
-    display: block;
-    background-color: #1c1c1c;
-}
-
-.Show-Now_popup-line::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 90px;
-    background-color: #000000;
-    top: 117%;
-    left: 30px;
-    display: none;
 }
 
 #Show-Now_popup {
@@ -63,25 +54,22 @@
     display: none;
 }
 
+.Top-categories-of-the-month-image-box img {
+    width: 150px;
+}
+
 .Top-categories-of-the-month-image-box img:hover {
     transform: scale(1.05);
     transition: all 0.3s linear;
 }
-
-#Show-Now_popup:hover+.Show-Now_popup-line::after {
-    display: block;
+.catagories-arrow{
+    padding: 5px 10px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
 }
-
-#Show-Now_popup:hover+#Show-Now_popup-line {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 1s;
-    /* set animation delay */
-}
-
-#Show-Now_popup-line {
-    position: relative;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 1s ease, transform 1s ease;
+.catagories-arrow:hover{
+    background: #868686;
+    color: rgb(255, 255, 255);
+    border: 1px solid #868686;
 }
