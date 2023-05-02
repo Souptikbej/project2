@@ -14,7 +14,22 @@ productContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+// product slider
+const productContainerss = [...document.querySelectorAll('.slider-container')];
+const nxtBtnn = [...document.querySelectorAll('.nxt-btn')];
+const preBtnn = [...document.querySelectorAll('.pre-btn')];
+productContainerss.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
 
+    nxtBtnn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtnn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
 // nav
 let subMenu = document.getElementById("subMenu");
 function toggleMenu() {
