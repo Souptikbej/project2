@@ -2,21 +2,24 @@
     display: flex;
     background: #bdbdbd;
     height: 50px;
-    width: 100%;
+    width: 1350px;
 }
 .navber-ul{
     display: flex;
+    /* align-items: center; */
     list-style: none;
     padding: 0px;
-    float: left;
+    margin: 0px;
+    /* float: left; */
+    /* height: 100%; */
 }
 .catagori-box{
     align-items: center;
     display: flex;
     border: 1px solid black;
-    padding: 10px;
+    padding: 0px 10px;
     gap: 8px;
-    width: 180px;
+    /* width: 180px; */
 }
 .cat-icon-details{
     display: flex;
@@ -49,10 +52,16 @@
 }
 .navber-ul-li{
     display: inline-block;
+    border: 1px solid black;
+    height: 100%;
     margin: 0px 10px;
+    display: flex;
+    align-items: center;
 }
 .navber-ul-li-a{
     text-decoration: none;
+    color: #000;
+    font-weight: 600;
 }
 .searchbar{
     display: flex;
