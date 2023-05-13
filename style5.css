@@ -1,35 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;900&display=swap');
 .header1{
+    display: flex;
+    border: 1px solid black;
+}
+.wish-compare-cart{
+    display: flex;
+}
+.header2 {
     display: flex;
     background: #bdbdbd;
     height: 50px;
-    width: 1350px;
+    justify-content: space-between;
 }
-.navber-ul{
+.browser-catagorey{
+    font-family: 'Montserrat', sans-serif;
+}
+.navber-ul {
     display: flex;
-    /* align-items: center; */
+    /* flex-wrap: wrap; */
     list-style: none;
     padding: 0px;
     margin: 0px;
     /* float: left; */
     /* height: 100%; */
 }
-.catagori-box{
+.catagori-box {
     align-items: center;
     display: flex;
-    border: 1px solid black;
+    border-right: 1px solid black;
     padding: 0px 10px;
     gap: 8px;
     /* width: 180px; */
 }
-.cat-icon-details{
+
+.cat-icon-details {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.cat-icon{
+
+.cat-icon {
     /* border: 1px solid black; */
     width: 20px;
 }
+
 #circule {
     width: 4px;
     height: 4px;
@@ -50,37 +64,63 @@
 .dot-and-line {
     display: flex;
 }
-.navber-ul-li{
+
+.navber-ul-li {
     display: inline-block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
     margin: 0px 10px;
     display: flex;
     align-items: center;
 }
-.navber-ul-li-a{
+
+.navber-ul-li-a {
     text-decoration: none;
     color: #000;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: 600; */
 }
-.searchbar{
+.navber-ul-li-a i{
+    margin-left: 5px;
+}
+.searchbar {
     display: flex;
     align-items: center;
-    float: right;
+    padding-right: 10px;
 }
-.searchbar form{
+
+.searchbar form {
+    display: flex;
+    align-items: center;
     background: white;
-    padding-left: 10px;
 }
-.searchbar input{
+.searchbar form i{
+    padding: 0px 10px;
+}
+.searchbar input {
     outline: none;
     border: none;
 }
-.searchbar button{
+
+.searchbar button {
     color: azure;
     padding: 10px;
     font-size: 15px;
     outline: none;
     border: none;
     background: rgb(37, 37, 255);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+@media (max-width: 1024px) {
+    .catagori-box{
+        display: none;
+    }
+    .navber-ul{
+        display: none;
+    }
+    /* .searchbar input {
+        width: 100%;
+    } */
 }
